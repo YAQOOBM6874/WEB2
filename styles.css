@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #f8f9fa;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background-color: #eef2ff;
+    padding: 80px 0;
+  }
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+  }
+  .hero-subtext {
+    color: #707070;
+    font-size: 1.1rem;
+  }
+  .hero-buttons {
+    margin-top: 20px;
+  }
+  .hero-btn-primary {
+    background-color: #e75b94;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+  }
+  .hero-btn-secondary {
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    color: black;
+  }
+  .hero-image-placeholder {
+    width: 350px;
+    height: 300px;
+    background-color: #c4c4c4;
+    border-radius: 20px;
+    display: inline-block;
+  }
+  
+  /* Partners Section */
+  .partners-section {
+    background-color: #fff;
+    padding: 40px 0;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Video Section */
+  .video-section {
+    background-color: #e3f8e8;
+    padding: 50px 0;
+  }
+  
+  /* Features Section */
+  .features-section {
+    padding: 80px 0;
+  }
+  .feature-icon {
+    font-size: 40px;
+    color: #4a4a4a;
+    margin-bottom: 15px;
+  }
+  .feature-text {
+    color: #6c757d;
+  }
+  
+  /* User Feedback Section */
+  .user-feedback-section {
+    background-color: #fefbf2;
+    padding: 100px 0;
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    background-color: #eef2ff;
+    padding: 100px 0;
+  }
+  .cta-section h2 {
+    font-size: 3rem;
+    color: black;
+  }
+  .cta-section p {
+    color: gray;
+  }
+  .cta-section .btn {
+    background-color: #e83e8c;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 30px;
+  }
+  
+  /* Footer */
+  .footer-section {
+    background-color: #ffffff;
+    padding: 50px 0;
+  }
+  .footer-section a {
+    text-decoration: none;
+    color: black;
+  }
+  
