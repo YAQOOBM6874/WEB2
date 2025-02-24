@@ -1,0 +1,266 @@
+.pricing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #9a9a9a;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.highlight {
+    color: #0044ff;
+}
+
+.pricing-table {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    background: white;
+    width: 280px;
+    position: relative;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card .title {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card .price-bar {
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(45deg, #0044ff, #00aaff);
+    margin-bottom: 10px;
+}
+
+.card .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0044ff;
+    background: rgba(0, 68, 255, 0.1);
+    padding: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 60px;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+}
+
+.features li {
+    padding: 5px 0;
+}
+
+.btn-primary {
+    width: 100%;
+    background: linear-gradient(90deg, #0044ff, #00aaff);
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background: black;
+    color: white;
+}
+
+.featured {
+    background: #0044ff;
+    color: white;
+    transform: scale(1.05);
+}
+
+.featured .price {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.featured .btn-primary {
+    background: white;
+    color: #0044ff;
+}
+
+.featured .btn-primary:hover {
+    background: black;
+    color: white;
+}
+
+.ribbon {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #ffffff;
+    color: rgb(0, 47, 255);
+    padding: 9px 14px;
+    font-weight: bold;
+    transform: rotate(20deg);
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.spacer {
+    height: 100px;
+}
+
+.image-container {
+    background: url('images/img.png') center/cover no-repeat;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.text-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: auto;
+}
+
+.subscription-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.subscription-form input {
+    border-radius: 5px 0 0 5px;
+    flex: 1;
+}
+
+.subscription-form button {
+    background: linear-gradient(90deg, #0044ff, #00aaff); /* نفس لون أزرار Get Started */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.subscription-form button:hover {
+    background: black;
+   
+}
+
+@media (max-width: 768px) {
+    .pricing-table {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .image-container {
+        padding: 50px 20px;
+    }
+
+    .subscription-form {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .subscription-form input {
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .pricing-header h2 {
+        font-size: 24px;
+    }
+
+    .pricing-header .subtitle {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pricing-header h2 {
+        font-size: 20px;
+    }
+
+    .pricing-header .subtitle {
+        font-size: 10px;
+    }
+
+    .card .title {
+        font-size: 18px;
+    }
+
+    .card .price {
+        font-size: 18px;
+    }
+
+    .card .features li {
+        font-size: 14px;
+    }
+
+    .subscription-form button {
+        padding: 12px 25px;
+    }
+
+    .text-content h2 {
+        font-size: 22px;
+    }
+
+    .text-content p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pricing-table {
+        gap: 30px;
+    }
+
+    .card {
+        width: 300px;
+    }
+}
