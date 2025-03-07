@@ -35,6 +35,3 @@ Pomodoro Timer is a web app that helps you manage time using the Pomodoro techni
 ### Notes
 - If you face CORS issues, use a local server: `npx http-server`, then visit `http://localhost:8080`.
 - Ensure `S.wav` is in the same folder as `index.html` or update the path.
-
-## License
-This project is open-source and free to use.
